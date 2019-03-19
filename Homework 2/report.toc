@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Task 1: Backpropagation}{2}
+\contentsline {subsection}{\numberline {1.1}Q1}{2}
+\contentsline {subsection}{\numberline {1.2}Answer}{2}
