@@ -111,13 +111,28 @@
 
     \begin{center}
         \begin{conditions}
-            $$I_h$$     &   Input to node h of hidden layer \\
-            $$i_n$$     &   Input to node n of the input layer \\   
+            $$I_h$$     &   Input to a node 'h' of hidden layer \\
+            $$i_n$$     &   Input to a node 'n' of the input layer \\   
             $$w_{nh}$$  &   Weight between input node $$n$$ and the hidden node $$h$$\\
         \end{conditions}
     \end{center}
     
+    The input to any one of the output layer nodes can be given as the sum of the bias and the product of weights and inputs from the hidden layer. This will be as follows:
     
+    \begin{equation}
+        I_o = \sum_{j=1}^{k} i_j * w_{jk}
+    \end{equation}
+
+    where:
+
+    \begin{center}
+        \begin{conditions}
+            $$I_o$$     &   Input to a node 'k' of output layer \\
+            $$i_j$$     &   Input to a node 'j' of the hidden layer \\   
+            $$w_{jo}$$  &   Weight between hidden node $$j$$ and the output node $$o$$\\
+        \end{conditions}
+    \end{center}
+
     Since the output consists of K mutually exclusive classes then we can take the label for the feature vectors to be of a matrix of length K
     and it contains a 1 at the appropriate label. Then the cross entropy loss function is given as:
 
