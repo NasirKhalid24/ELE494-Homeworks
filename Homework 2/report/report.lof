@@ -1,2 +1,9 @@
 \babel@toc {english}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Representation of the neural network\relax }}{2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Fashion MNIST Dataset Images\relax }}{8}
+\contentsline {figure}{\numberline {3}{\ignorespaces Trained with 16 hidden nodes and 15 epochs\relax }}{9}
+\contentsline {figure}{\numberline {4}{\ignorespaces Trained with 64 hidden nodes and 15 epochs\relax }}{10}
+\contentsline {figure}{\numberline {5}{\ignorespaces Trained with 128 hidden nodes and 15 epochs\relax }}{10}
+\contentsline {figure}{\numberline {6}{\ignorespaces Trained with 512 hidden nodes and 15 epochs\relax }}{11}
+\contentsline {figure}{\numberline {7}{\ignorespaces 16 Neurons and RELU\relax }}{12}
+\contentsline {figure}{\numberline {8}{\ignorespaces 16 Neurons and Sigmoid\relax }}{13}

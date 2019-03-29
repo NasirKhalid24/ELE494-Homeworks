@@ -1,0 +1,17 @@
+\babel@toc {english}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the neural network\relax }}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Fashion MNIST Dataset Images\relax }}{9}
+\contentsline {figure}{\numberline {3}{\ignorespaces Trained with 16 hidden nodes and 15 epochs\relax }}{10}
+\contentsline {figure}{\numberline {4}{\ignorespaces Trained with 64 hidden nodes and 15 epochs\relax }}{11}
+\contentsline {figure}{\numberline {5}{\ignorespaces Trained with 128 hidden nodes and 15 epochs\relax }}{11}
+\contentsline {figure}{\numberline {6}{\ignorespaces Trained with 512 hidden nodes and 15 epochs\relax }}{12}
+\contentsline {figure}{\numberline {7}{\ignorespaces 16 Neurons and RELU\relax }}{13}
+\contentsline {figure}{\numberline {8}{\ignorespaces 16 Neurons and Sigmoid\relax }}{13}
+\contentsline {figure}{\numberline {9}{\ignorespaces 64 Neurons and RELU\relax }}{14}
+\contentsline {figure}{\numberline {10}{\ignorespaces 64 Neurons and Sigmoid\relax }}{14}
+\contentsline {figure}{\numberline {11}{\ignorespaces 128 Neurons and RELU\relax }}{15}
+\contentsline {figure}{\numberline {12}{\ignorespaces 128 Neurons and Sigmoid\relax }}{15}
+\contentsline {figure}{\numberline {13}{\ignorespaces 512 Neurons and RELU\relax }}{16}
+\contentsline {figure}{\numberline {14}{\ignorespaces 512 Neurons and Sigmoid\relax }}{16}
+\contentsline {figure}{\numberline {15}{\ignorespaces Network trained on all training data and then tested on testing data\relax }}{17}
+\contentsline {figure}{\numberline {16}{\ignorespaces Confusion Matrix\relax }}{17}

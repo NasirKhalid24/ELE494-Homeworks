@@ -1,0 +1,40 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Task 1: Backpropagation}{3}
+\contentsline {subsection}{\numberline {1.1}Q1.1}{3}
+\contentsline {subsection}{\numberline {1.2}Background to Answer}{3}
+\contentsline {subsection}{\numberline {1.3}A1: Gradient Update for hidden-to-output weights}{6}
+\contentsline {subsection}{\numberline {1.4}A2: Gradient Update for input-to-hidden weights}{7}
+\contentsline {subsection}{\numberline {1.5}A3: Learning Parameter}{8}
+\contentsline {section}{\numberline {2}Task 2: Implementation}{8}
+\contentsline {subsection}{\numberline {2.1}Q2}{8}
+\contentsline {subsection}{\numberline {2.2}A1: Fashion-MNIST Details}{9}
+\contentsline {subsection}{\numberline {2.3}A2: Reasonable Loss Function}{10}
+\contentsline {subsection}{\numberline {2.4}A3: Training 4 Neural Networks}{10}
+\contentsline {subsubsection}{\numberline {2.4.1}16 nodes and 15 epochs}{10}
+\contentsline {subsubsection}{\numberline {2.4.2}64 nodes and 15 epochs}{10}
+\contentsline {subsubsection}{\numberline {2.4.3}128 nodes and 15 epochs}{11}
+\contentsline {subsubsection}{\numberline {2.4.4}512 nodes and 15 epochs}{11}
+\contentsline {subsection}{\numberline {2.5}A4: Increasing the epochs to 30}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}For 16 Neurons}{12}
+\contentsline {subsubsection}{\numberline {2.5.2}For 64 Neurons}{12}
+\contentsline {subsubsection}{\numberline {2.5.3}For 128 Neurons}{12}
+\contentsline {subsubsection}{\numberline {2.5.4}For 512 Neurons}{12}
+\contentsline {subsection}{\numberline {2.6}A5: Hidden Layer Activation Function}{13}
+\contentsline {subsubsection}{\numberline {2.6.1}For 16 Neurons}{13}
+\contentsline {subsubsection}{\numberline {2.6.2}For 64 Neurons}{14}
+\contentsline {subsubsection}{\numberline {2.6.3}For 128 Neurons}{15}
+\contentsline {subsubsection}{\numberline {2.6.4}For 512 Neurons}{16}
+\contentsline {subsection}{\numberline {2.7}A6: Retraining Network}{16}
+\contentsline {section}{\numberline {3}Task 3: Theory Questions}{17}
+\contentsline {subsection}{\numberline {3.1}Q1}{17}
+\contentsline {subsection}{\numberline {3.2}A1}{18}
+\contentsline {subsection}{\numberline {3.3}Q2}{18}
+\contentsline {subsection}{\numberline {3.4}A2}{18}
+\contentsline {subsection}{\numberline {3.5}Q3}{18}
+\contentsline {subsection}{\numberline {3.6}A3}{18}
+\contentsline {subsection}{\numberline {3.7}Q4}{18}
+\contentsline {subsection}{\numberline {3.8}A4}{19}
+\contentsline {subsection}{\numberline {3.9}Q5}{19}
+\contentsline {subsection}{\numberline {3.10}A5}{19}
+\contentsline {subsection}{\numberline {3.11}Q6}{19}
+\contentsline {subsection}{\numberline {3.12}A6}{20}

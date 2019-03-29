@@ -1,7 +1,5 @@
 \documentclass[a4paper, 12pt]{article}
-\usepackage{subfig}
 \usepackage{caption}
-\usepackage{subcaption}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 \usepackage{listings}
@@ -387,20 +385,19 @@
 
     \subsubsection{For 16 Neurons}
     
-    The test accuracy decreased by 0.00225. The test loss increased by 0.00432545667. For 16 neurons it did not really improve the validation performance.
+    The test accuracy decreased by 0.00225. The test loss increased by 0.004325. For 16 neurons it did not really improve the validation performance.
 
     \subsubsection{For 64 Neurons}
 
-    The test accuracy decreased by 0.0086. The test loss increased by 0.0338353184. For 64 neurons it did not really improve the validation performance.
-
+    The test accuracy decreased by 0.0086. The test loss increased by 0.033835. For 64 neurons it did not really improve the validation performance.
 
     \subsubsection{For 128 Neurons}
 
-    The test accuracy increased by 0.00475. The test loss decreased by 0.00648806181. For 32 neurons it improved the validation performance.
+    The test accuracy increased by 0.00475. The test loss decreased by 0.006488. For 32 neurons it improved the validation performance.
 
     \subsubsection{For 512 Neurons}
 
-    The test accuracy increased by 0.0073. The test loss decreased by 0.0253319392. For 512 neurons it improved the validation performance.
+    The test accuracy increased by 0.0073. The test loss decreased by 0.025331. For 512 neurons it improved the validation performance.
 
     \subsection{A5: Hidden Layer Activation Function}
 
@@ -413,7 +410,7 @@
     \begin{figure}[h!]
         \centering
         \captionsetup{justification=centering}
-        \includegraphics[scale = 0.5]{16_RELU.png}
+        \includegraphics[scale = 0.3]{16_RELU.png}
         \caption{16 Neurons and RELU}
     \end{figure}
 
@@ -422,22 +419,200 @@
     \begin{figure}[h!]
         \centering
         \captionsetup{justification=centering}
-        \includegraphics[scale = 0.5]{16_SIG.png}
+        \includegraphics[scale = 0.3]{16_SIG.png}
         \caption{16 Neurons and Sigmoid}
     \end{figure}
 
+    \subsubsection{For 64 Neurons}
 
-    % \begin{figure}[!tbp]
-    %     \centering
-    %     \begin{minipage}[b]{0.4\textwidth}
-    %       \includegraphics[width=\textwidth]{16_RELU.png}
-    %       \caption{16 Neurons and RELU}
-    %     \end{minipage}
-    %     \hfill
-    %     \begin{minipage}[b]{0.4\textwidth}
-    %       \includegraphics[width=\textwidth]{16_SIG.png}
-    %       \caption{16 Neurons and Sigmoid}
-    %     \end{minipage}
-    % \end{figure}
+    Here the sigmoid activation performed better. Below is the RELU activation
 
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{64_RELU.png}
+        \caption{64 Neurons and RELU}
+    \end{figure}
+
+    Below is the Sigmoid activation
+    
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{64_SIG.png}
+        \caption{64 Neurons and Sigmoid}
+    \end{figure}
+
+    \pagebreak
+    \subsubsection{For 128 Neurons}
+
+    Here the sigmoid activation performed better. Below is the RELU activation
+
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{128_RELU.png}
+        \caption{128 Neurons and RELU}
+    \end{figure}
+
+    Below is the Sigmoid activation
+    
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{128_SIG.png}
+        \caption{128 Neurons and Sigmoid}
+    \end{figure}
+
+    \pagebreak
+    \subsubsection{For 512 Neurons}
+
+    Here the sigmoid activation performed better. Below is the RELU activation
+
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{512_RELU.png}
+        \caption{512 Neurons and RELU}
+    \end{figure}
+
+    Below is the Sigmoid activation
+    
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.3]{512_SIG.png}
+        \caption{512 Neurons and Sigmoid}
+    \end{figure}
+
+    Overall the sigmoid function performed best as the activation function of the hidden layer. It was much faster at reaching the lowest error value.
+
+    \subsection{A6: Retraining Network}
+
+    Here we retrain the network with 512 nodes, 30 epochs and the sigmoid activation for hidden layer. The network was trained for 60000 images and the tested on the 20000 test data. The code is in the jupyter notebooks final cell.
+
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.4]{Final.png}
+        \caption{Network trained on all training data and then tested on testing data}
+    \end{figure}
+
+    This network had the best performance on all previously trained networks and the confusion matrix for it is shown below:
+
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering}
+        \includegraphics[scale = 0.4]{cm.png}
+        \caption{Confusion Matrix}
+    \end{figure}
+
+    \section{Task 3: Theory Questions}
+
+    \subsection{Q1}
+
+    What is generalization in the context of machine learning. Is it better for the machine learning algorithms to generalize?
+
+    \subsection{A1}
+
+    Generalization is the ability for a network to figure out/adapt to the new input data. It determines how well a network will perform on data it has never seen before. Generalization is better because the better the network is at it, the better it will be with brand new data. If a system does not generalize then it will be unable to adapt.
+
+    \subsection{Q2}
+
+    What is overfitting and under-fitting, how is it related to generalization?
+    
+    \subsection{A2}
+
+    Overfitting is when the network essentially 'memorizes' the data and it manages to lower it's cost function heavily however this sort of behavior means it is unable to generalize and it will do well on training data but not on real life data.
+    Under-fitting is when the network is unsuccesfully trained and it's cost function is not as low as it can get, this means that it performs poorly on training data as well as test data. It's weights need to be adjusted further. 
+
+    \subsection{Q3}
+
+    What is capacity of a neural network? Is it related to generalization, if so how?
+
+    \subsection{A3}
+
+    Capacity of a network is how much the network is able to learn. The more it is able to learn the more complex it's model will become. In relation to generalization, a network that is extremely complex can tend to overfit on a very simple problem, however, on a complex problem it will be good at picking up the subtle nuances of the input data. So a network with low capacity can underfit while a network with high capacity can often overfit. It is vital to find a middle ground
+
+    \subsection{Q4}
+
+    What is the relationship between number of epochs and overfitting?
+
+    \subsection{A4}
+
+    If the number of epochs (iterations) exceeds a certain value the model can start to overfit the data. Initially the increasing number of epochs can improve accuracy but after a limit the network starts overfitting
+
+    \subsection{Q5}
+
+    What is weight regularization? How does it improve generalizations? Write a code snippet that can be included in Task 2 for adding weight regularization.
+
+    \subsection{A5}
+
+    When the weights of a network tend to increase by a large amount we reduce them through normalization techniques. This is called weight regularization and it is used to reduce the chances of overfitting in a network. This is because in a network with overfitting there are usually large weights so by making them smaller and reducing them through normalization we tend to prevent overfitting. This in turn helps the network generalize better. Below is some code that shows how we would implement regularization on the Fashion MNIST code
+
+    \begin{lstlisting}[language=python, caption=Network with Weight Regularization]
+    import keras
+    from keras.models import Sequential
+    from keras.layers import Dense
+    from keras import regularizers
+    
+    model = Sequential()
+
+    model.add(Dense(16,
+                    input_dim=784,
+                    kernel_regularizer=regularizers.l2(0.01),
+                    activity_regularizer=regularizers.l1(0.01)))
+
+    model.add(Dense(10,
+                    activation='softmax',
+                    kernel_regularizer=regularizers.l2(0.01),
+                    activity_regularizer=regularizers.l1(0.01)))
+
+    model.compile(optimizer='rmsprop',
+                  loss='categorical_crossentropy',
+                  metrics=['accuracy'])\end{lstlisting}
+
+    \subsection{Q6}
+
+    What is drop out? How does it improve generalizations? Write a code snippet that can be included in Task 2 for adding drop out.
+
+    \subsection{A6}
+
+    Dropout is when we randomly turn some of the weights in the network to 0, thereby forcing the network to learn based on other parameters. This reduces dependency on a single weight and it also helps prevent overfitting.
+
+    \begin{lstlisting}[language=python, caption=Network with Dropout]
+    import keras
+    from keras.models import Sequential
+    from keras.layers import Dense
+    from keras.layers import Dropout
+
+    model = Sequential()
+    
+    model.add(Dropout(0.2))
+
+    model.add(Dense(16, input_dim=784,))
+
+    model.add(Dropout(0.2))
+
+    model.add(Dense(10, activation='softmax',))
+
+    model.compile(optimizer='rmsprop',
+                  loss='categorical_crossentropy',
+                  metrics=['accuracy'])\end{lstlisting}
+
+    \pagebreak
+
+    \begin{thebibliography}{9}
+        \bibitem{notes} 
+        Usman Tariq Notes and Slides from ELE494. 
+        
+        \bibitem{eli} 
+        Eli Bendersky's Website. 
+        \textit{The Softmax Function and its derivative}
+        \\\texttt{https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative/}
+        
+        \bibitem{kerasdocs} 
+        Keras Documentation,
+        \\\texttt{https://keras.io/}
+    \end{thebibliography}
 \end{document} 
